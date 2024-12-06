@@ -1,0 +1,65 @@
+.square {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  background: #f9f9f9;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square.X {
+  color: black; /* "X" 变黑 */
+}
+
+.square.O {
+  color: red; /* "O" 变红 */
+}
+
+.square.winning {
+  background: #ffd700; /* 高亮获胜方块，金色背景 */
+  border-color: #ffcc00; /* 金色边框 */
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:active {
+  background: #388e3c;
+}
